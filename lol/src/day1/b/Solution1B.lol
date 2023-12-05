@@ -1,7 +1,5 @@
 HAI 1.4
-    BTW Include the input output library
     CAN HAS STDIO?
-    BTW Include the string library
     CAN HAS STRING?
 
     BTW function for checking if param is a number - there are no types currently
@@ -37,11 +35,19 @@ HAI 1.4
         I HAS A laines ITZ A BUKKIT
         I HAS A size ITZ 0
 
-        HOW IZ I ADDALAINEBRO YR maLaine
-            BTW of course we could introduce scoped variables for better readability, but why would we ever do that?
+        HOW IZ I ADDALAINEBRO YR laineContent
+            I HAS A index ITZ SUM OF ME'Z size AN 1
+            ME'Z size R index                           BTW Increment our size by 1
+            I HAS A currLaine ITZ LIEK A laine
+            currLaine HAS A content ITZ laineContent
+            ME'Z laines HAS A SRS index ITZ currLaine         BTW Push the content of maLaine into our laines bukkit
 
-            ME'Z size R SUM OF ME'Z size AN 1                   BTW Increment our size by 1
-            ME'Z laines HAS A SRS ME'Z size ITZ maLaine         BTW Push the content of maLaine into our laines bukkit
+            BTW VISIBLE ME'Z size AN ": added a new laine with content " AN ME'Z I IZ GETALAINEBRO YR ME'Z size MKAY
+        IF U SAY SO
+
+        HOW IZ I GETALAINEBRO YR index
+            I HAS A tmpLaine ITZ ME'Z laines'Z SRS index
+            FOUND YR tmpLaine
         IF U SAY SO
 
         OBTW
@@ -90,12 +96,8 @@ HAI 1.4
         IF U SAY SO
     KTHX
 
-    O HAI IM laine                              BTW laine is a great name for a line
-        I HAS A content ITZ ""
-
-        HOW IZ I INITMALAINE YR input
-            ME'Z content R input
-        IF U SAY SO
+    O HAI IM laine
+        I HAS A content ITZ "empty"
 
         HOW IZ I COUNTMYNUMBRS
             I HAS A firstNumbr ITZ FAIL
@@ -121,10 +123,6 @@ HAI 1.4
         IF U SAY SO
     KTHX
 
-    I HAS A currentLine ITZ LIEK A laine
-    I IZ currentLine'Z INITMALAINE YR "1test3" MKAY
-
-    I IZ laineBukkit'Z ADDALAINEBRO YR currentLine MKAY
     BTW VISIBLE laineBukkit'Z laines'Z SRS 1 'Z content             BTW ofc it works if you add a random 'Z to access the properties of the bukkit in there. WOW.
     BTW VISIBLE I IZ currentLine'Z COUNTMYNUMBRS MKAY
 
@@ -145,7 +143,12 @@ HAI 1.4
     BTW Read in from file (21727 bytes). There must be some way to get the filesize
     I HAS A contents ITZ I IZ STDIO'Z LUK YR readFile AN YR 22728 MKAY
 
-    I IZ laineBukkit'Z PARSECONTENT YR contents MKAY
+    laineBukkit IZ PARSECONTENT YR contents MKAY
 
-    VISIBLE laineBukkit'Z laines'Z SRS 1 'Z content
+    VISIBLE "Testing output of laineBukkit"
+
+    IM IN YR loop UPPIN YR tmp TIL BOTH SAEM tmp AN laineBukkit'Z size
+        I HAS A laine ITZ I IZ laineBukkit'Z GETALAINEBRO YR SUM OF tmp AN 1 MKAY
+        VISIBLE I IZ laine'Z COUNTMYNUMBRS MKAY
+    IM OUTTA YR loop
 KTHXBYE
