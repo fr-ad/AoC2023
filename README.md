@@ -15,6 +15,9 @@ Make sure to use the "future" branch, because it contains some extremely advance
 
 ![That's the neat thing meme](https://pbs.twimg.com/media/FaW4x-zWQAE9eKu.jpg)
 
+./testDriver.py -o ./day1/test.out -i ./day1/test.in /usr/local/bin/lci ./day1/test.lol
+But I am too lazy for that
+
 ### Why did you code X like that?
 Either I didn't know a better way, LOLCODE did not support it, or I was just a dumb dumb.
 
@@ -22,4 +25,4 @@ I decided to not do refactorings during each task, so the code is pretty much a 
 
 ### Does LOLCODE support feature XYZ?
 
-![Pedro crying](https://media.tenor.com/eMlRvsH35tcAAAAd/pedro-pascal-crying-meme-crying.gif)
+![Pedro crying](resources/pedro.gif)
