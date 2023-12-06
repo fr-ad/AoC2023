@@ -123,6 +123,47 @@ HAI 1.4
         IF U SAY SO
     KTHX
 
+    HOW IZ I RESOLVENUMBR YR input
+        input, WTF?
+            OMG 1
+            OMG "one"
+                FOUND YR 1
+                GTFO
+            OMG 2
+            OMG "two"
+                FOUND YR 2
+                GTFO
+            OMG 3
+            OMG "three"
+                FOUND YR 3
+                GTFO
+            OMG 4
+            OMG "four"
+                FOUND YR 4
+                GTFO
+            OMG 5
+            OMG "five"
+                FOUND YR 5
+                GTFO
+            OMG 6
+            OMG "six"
+                FOUND YR 6
+                GTFO
+            OMG 7
+            OMG "seven"
+                FOUND YR 7
+                GTFO
+            OMG 8
+            OMG "eight"
+                FOUND YR 8
+                GTFO
+            OMG 9
+            OMG "nine"
+                FOUND YR 9
+                GTFO
+        OIC
+    IF U SAY SO
+
     BTW VISIBLE laineBukkit'Z laines'Z SRS 1 'Z content             BTW ofc it works if you add a random 'Z to access the properties of the bukkit in there. WOW.
     BTW VISIBLE I IZ currentLine'Z COUNTMYNUMBRS MKAY
 
@@ -147,8 +188,24 @@ HAI 1.4
 
     VISIBLE "Testing output of laineBukkit"
 
+    I HAS A result ITZ 0
     IM IN YR loop UPPIN YR tmp TIL BOTH SAEM tmp AN laineBukkit'Z size
         I HAS A laine ITZ I IZ laineBukkit'Z GETALAINEBRO YR SUM OF tmp AN 1 MKAY
-        VISIBLE I IZ laine'Z COUNTMYNUMBRS MKAY
+        result R SUM OF result AN I IZ laine'Z COUNTMYNUMBRS MKAY
     IM OUTTA YR loop
+    VISIBLE result
+
+    I IZ RESOLVENUMBR YR "two" MKAY
+    OBTW
+        take a char
+            is it a numbr?
+                proceed as solution 1A
+            take the next two characters, so we have 3
+                is it a numbr by resolve?
+                    proceed
+                take the next character, so we have 4
+                    ....
+                up to 5 characters
+            forget the first one, restart at "is it a numbr?"
+    TLDR
 KTHXBYE
